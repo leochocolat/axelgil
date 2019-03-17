@@ -1,13 +1,37 @@
 @font-face {
-  font-family: "Gotham";
-  src: font-url("fonts/GothamMedium.ttf") format("ttf");
-  font-weight: bold;
+  font-family: GothamPro;
+  src: url(../fonts/GothamPro.eot);
+  src: url(../fonts/GothamPro.woff2) format("woff2"), url(../fonts/GothamPro.woff) format("woff"), url(../fonts/GothamPro.ttf) format("truetype"), url(../fonts/GothamPro.svg#GothamPro) format("svg"), url(../fonts/GothamPro.eot?#iefix) format("embedded-opentype");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: GothamPro;
+  src: url(../fonts/GothamPro-Medium.eot);
+  src: url(../fonts/GothamPro-Medium.woff2) format("woff2"), url(../fonts/GothamPro-Medium.woff) format("woff"), url(../fonts/GothamPro-Medium.ttf) format("truetype"), url(../fonts/GothamPro-Medium.svg#GothamPro-Medium) format("svg"), url(../fonts/GothamPro-Medium.eot?#iefix) format("embedded-opentype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: GothamPro;
+  src: url(../fonts/GothamPro-Bold.eot);
+  src: url(../fonts/GothamPro-Bold.woff2) format("woff2"), url(../fonts/GothamPro-Bold.woff) format("woff"), url(../fonts/GothamPro-Bold.ttf) format("truetype"), url(../fonts/GothamPro-Bold.svg#GothamPro-Bold) format("svg"), url(../fonts/GothamPro-Bold.eot?#iefix) format("embedded-opentype");
+  font-style: normal; }
+
+@font-face {
+  font-family: GothamProBold;
+  src: url(../fonts/GothamPro-Black.eot);
+  src: url(../fonts/GothamPro-Black.woff2) format("woff2"), url(../fonts/GothamPro-Black.woff) format("woff"), url(../fonts/GothamPro-Black.ttf) format("truetype"), url(../fonts/GothamPro-Black.svg#GothamPro-Black) format("svg"), url(../fonts/GothamPro-Black.eot?#iefix) format("embedded-opentype");
   font-style: normal; }
 
 body {
-  min-height: 100vh;
   color: #081757;
-  background-color: white; }
+  background-color: white;
+  font-family: "GothamProBold", "Gotham", Arial, sans-serif;
+  font-weight: 800; }
+
+.container {
+  min-height: 100vh; }
 
 .bg-blue {
   background-color: #081757; }
@@ -52,53 +76,40 @@ body {
   color: #5e3d91; }
 
 h1 {
-  font-family: 'Gotham';
-  font-weight: 100;
   text-transform: lowercase;
   font-size: 240px;
-  color: #c7cbd9;
-  font-weight: bold; }
+  color: #c7cbd9; }
 
 h2 {
   text-align: center;
   text-transform: uppercase;
-  font-family: 'Gotham';
   font-size: 48px;
   margin-bottom: 0;
-  font-weight: normal; }
+  font-family: "GothamPro", "Gotham", Arial, sans-serif; }
 
 h3 {
   text-align: center;
   text-transform: uppercase;
-  font-family: 'Gotham';
   font-size: 30px;
-  font-weight: normal; }
+  font-family: "GothamPro", "Gotham", Arial, sans-serif; }
 
 h4 {
   text-align: left;
-  font-family: 'Gotham';
   font-size: 32px;
-  font-weight: bold;
   margin-bottom: 40px; }
 
 p {
-  font-family: 'Gotham';
   font-size: 14px;
-  text-align: left;
-  font-weight: bold; }
+  text-align: left; }
 
 .name-brand {
   white-space: nowrap;
-  font-family: 'Gotham';
-  font-weight: normal;
   letter-spacing: 2.5px;
   font-size: 24px;
   text-transform: uppercase;
   text-align: center; }
 
 .email {
-  font-family: 'Gotham';
-  font-weight: bold;
   font-size: 18px;
   text-align: center; }
 
@@ -131,12 +142,26 @@ a {
 
 .btn-custom {
   display: inline;
-  font-family: 'Gotham';
-  font-weight: bold;
   text-align: center;
   padding: 5px 15px;
   border-radius: 15px;
   background-color: white; }
+
+.container {
+  min-height: 100vh;
+  padding-top: 20%; }
+  .container .page-body {
+    position: relative;
+    top: 0;
+    width: 100%; }
+    .container .page-body h1 {
+      white-space: nowrap;
+      position: absolute;
+      top: 0;
+      left: 0;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
 
 #theme {
   margin: 100px; }
@@ -177,9 +202,11 @@ a {
     height: 150px; }
 
 .navbar {
+  background-color: white;
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1000;
   width: 100%;
   padding-top: 15px;
   -webkit-align-items: flex-end;
@@ -231,3 +258,11 @@ a {
         width: 35px;
         height: 6px;
         border-radius: 5px; }
+
+.footer {
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center; }

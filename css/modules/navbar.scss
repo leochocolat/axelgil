@@ -1,7 +1,9 @@
 .navbar {
+  background-color: white;
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1000;
   width: 100%;
   padding-top: 15px;
   align-items: flex-end;
@@ -41,7 +43,6 @@
       z-index: -1;
       transition: width .3s ease-in-out;
     }
-
     &:hover {
       &:before {
         transition: width .3s ease-in-out;

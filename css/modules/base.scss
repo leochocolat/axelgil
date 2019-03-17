@@ -1,9 +1,13 @@
 body {
-  min-height: 100vh;
   color: $mainColor;
   background-color: white;
+  font-family: $black;
+  font-weight: 800;
 }
-
+.container {
+  min-height: 100vh;
+}
+// COULEURS
 .bg-blue {
   background-color: $mainColor;
 }
@@ -46,65 +50,46 @@ body {
 .purple3 {
   color: #5e3d91;
 }
-
+// TITRES
 h1 {
-  font-family: 'Gotham';
-  font-weight: 100;
   text-transform: lowercase;
   font-size: 240px;
   color: #c7cbd9;
-  font-weight: bold;
 }
-
 h2 {
   text-align: center;
   text-transform: uppercase;
-  font-family: 'Gotham';
   font-size: 48px;
   margin-bottom: 0;
-  font-weight: normal;
+  font-family: $bold;
 }
-
 h3 {
   text-align: center;
   text-transform: uppercase;
-  font-family: 'Gotham';
   font-size: 30px;
-  font-weight: normal;
+  font-family: $bold;
 }
-
 h4 {
   text-align: left;
-  font-family: 'Gotham';
   font-size: 32px;
-  font-weight: bold;
   margin-bottom: 40px;
 }
-
+// CONTENU DIVERS
 p {
-  font-family: 'Gotham';
   font-size: 14px;
   text-align: left;
-  font-weight: bold;
 }
-
 .name-brand {
   white-space: nowrap;
-  font-family: 'Gotham';
-  font-weight: normal;
   letter-spacing: 2.5px;
   font-size: 24px;
   text-transform: uppercase;
   text-align: center;
 }
-
 .email {
-  font-family: 'Gotham';
-  font-weight: bold;
   font-size: 18px;
   text-align: center;
 }
-
 a {
   color: inherit;
   text-decoration: none;
@@ -113,14 +98,10 @@ a {
     text-decoration: none;
   }
 }
-
-
-// blocks
-
+// BLOCKS
 .row-custom {
   justify-content: center;
 }
-
 .container-img {
   position: relative;
   width: 100%;
@@ -134,15 +115,29 @@ a {
     height: auto;
   }
 }
-
-//buttons
-
+//BOUTONS
 .btn-custom {
   display: inline;
-  font-family: 'Gotham';
-  font-weight: bold;
   text-align: center;
   padding: 5px 15px;
   border-radius: 15px;
   background-color: white;
+}
+//LAYOUT
+.container {
+  min-height: 100vh;
+  padding-top: 20%;
+  .page-body {
+    position: relative;
+    top: 0;
+    width: 100%;
+    h1 {
+      white-space: nowrap;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateY(-50%);
+    }
+
+  }
 }
