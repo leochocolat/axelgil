@@ -1,58 +1,233 @@
-@import url("https://fonts.googleapis.com/css?family=Lobster+Two:400,400i,700,700i");
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900");
+@font-face {
+  font-family: "Gotham";
+  src: font-url("fonts/GothamMedium.ttf") format("ttf");
+  font-weight: bold;
+  font-style: normal; }
+
 body {
-  overflow-x: hidden;
-  color: black; }
+  min-height: 100vh;
+  color: #081757;
+  background-color: white; }
 
-.elt_title, .elt_title_inherit {
-  font-size: 50px;
-  font-family: 'Work Sans';
-  font-weight: 100; }
+.bg-blue {
+  background-color: #081757; }
 
-.page-home {
-  height: 100vh;
-  width: 100vw;
-  background-color: white;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.bg-blue1 {
+  background-color: #4f6ab1; }
+
+.bg-blue2 {
+  background-color: #688dc9; }
+
+.bg-blue3 {
+  background-color: #95b8e2; }
+
+.bg-purple1 {
+  background-color: #4d4a9a; }
+
+.bg-purple2 {
+  background-color: #4a3f92; }
+
+.bg-purple3 {
+  background-color: #5e3d91; }
+
+.blue {
+  color: #081757; }
+
+.blue1 {
+  color: #4f6ab1; }
+
+.blue2 {
+  color: #688dc9; }
+
+.blue3 {
+  color: #95b8e2; }
+
+.purple1 {
+  color: #4d4a9a; }
+
+.purple2 {
+  color: #4a3f92; }
+
+.purple3 {
+  color: #5e3d91; }
+
+h1 {
+  font-family: 'Gotham';
+  font-weight: 100;
+  text-transform: lowercase;
+  font-size: 240px;
+  color: #c7cbd9;
+  font-weight: bold; }
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Gotham';
+  font-size: 48px;
+  margin-bottom: 0;
+  font-weight: normal; }
+
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Gotham';
+  font-size: 30px;
+  font-weight: normal; }
+
+h4 {
+  text-align: left;
+  font-family: 'Gotham';
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px; }
+
+p {
+  font-family: 'Gotham';
+  font-size: 14px;
+  text-align: left;
+  font-weight: bold; }
+
+.name-brand {
+  white-space: nowrap;
+  font-family: 'Gotham';
+  font-weight: normal;
+  letter-spacing: 2.5px;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center; }
+
+.email {
+  font-family: 'Gotham';
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+  a:hover {
+    color: inherit;
+    text-decoration: none; }
+
+.row-custom {
   -webkit-justify-content: center;
      -moz-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  .page-home .flex {
-    position: relative;
-    width: 50%;
-    height: 50%; }
-  .page-home .name {
-    font-size: 100px;
-    font-weight: 600;
-    font-family: 'Work Sans';
-    color: white;
-    position: absolute;
-    left: 30%;
-    top: 35%;
-    white-space: nowrap; }
-    .page-home .name.white {
-      color: white; }
-      .page-home .name.white:hover {
-        cursor: pointer; }
-    .page-home .name.black {
-      color: black; }
-      .page-home .name.black:before {
-        transition: all ease-in-out .3s;
-        content: '';
-        width: 0;
-        background-color: black;
-        height: 100%;
-        position: absolute;
-        top: 0%;
-        left: -5%; }
 
-.namehover {
-  transition: all ease-in-out .3s; }
+.container-img {
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+  .container-img img, .container-img svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto; }
+
+.btn-custom {
+  display: inline;
+  font-family: 'Gotham';
+  font-weight: bold;
+  text-align: center;
+  padding: 5px 15px;
+  border-radius: 15px;
+  background-color: white; }
+
+#theme {
+  margin: 100px; }
+  #theme section {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100vh;
+    border: black 1px solid; }
+  #theme #color .bg {
+    width: 100%;
+    height: 150px; }
+  #theme #color .text {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 150px; }
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 15px;
+  -webkit-align-items: flex-end;
+     -moz-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+  @media screen and (max-width: 768px) {
+    .navbar {
+      padding: 10px 0; } }
+  @media screen and (max-width: 768px) {
+    .navbar .logo-brand img {
+      width: 50px;
+      height: 50px; } }
+  @media screen and (max-width: 576px) {
+    .navbar .logo-brand img {
+      width: 40px;
+      height: 40px; } }
+  .navbar a {
+    position: relative;
+    margin: auto 15px;
+    font-family: 'Gotham';
+    text-transform: lowercase;
+    font-size: 24px;
+    font-weight: bold; }
+    .navbar a:before {
+      content: '';
+      position: absolute;
+      bottom: 3px;
+      left: -5px;
+      width: 0;
+      height: 8px;
+      background-color: #95b8e2;
+      z-index: -1;
+      transition: width .3s ease-in-out; }
+    .navbar a:hover:before {
+      transition: width .3s ease-in-out;
+      width: 100%; }
+  .navbar .menu-burger {
+    position: relative; }
+    .navbar .menu-burger .burger {
+      position: absolute;
+      bottom: 50%;
+      right: 0;
+      -webkit-transform: translateY(-20%);
+          -ms-transform: translateY(-20%);
+              transform: translateY(-20%); }
+      .navbar .menu-burger .burger div {
+        margin: 2px 0;
+        width: 35px;
+        height: 6px;
+        border-radius: 5px; }

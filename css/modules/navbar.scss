@@ -1,0 +1,67 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 15px;
+  align-items: flex-end;
+  @media screen and (max-width: 768px) {
+    padding: 10px 0;
+  }
+  .logo-brand {
+    @media screen and (max-width: 768px) {
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    @media screen and (max-width: 576px) {
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  a {
+    position: relative;
+    margin: auto 15px;
+    font-family: 'Gotham';
+    text-transform: lowercase;
+    font-size: 24px;
+    font-weight: bold;
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 3px;
+      left: -5px;
+      width: 0;
+      height: 8px;
+      background-color: $Blue3;
+      z-index: -1;
+      transition: width .3s ease-in-out;
+    }
+
+    &:hover {
+      &:before {
+        transition: width .3s ease-in-out;
+        width: 100%;
+      }
+    }
+  }
+  .menu-burger {
+    position: relative;
+    .burger {
+      position: absolute;
+      bottom: 50%;
+      right: 0;
+      transform: translateY(-20%);
+      div {
+        margin: 2px 0;
+        width: 35px;
+        height: 6px;
+        border-radius: 5px;
+      }
+    }
+  }
+}
