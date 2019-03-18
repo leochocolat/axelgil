@@ -53,8 +53,20 @@ body {
 // TITRES
 h1 {
   text-transform: lowercase;
-  font-size: 240px;
+  font-size: 210px;
   color: #c7cbd9;
+  @media screen and (max-width: 1200px) {
+    font-size: 190px;
+  }
+  @media screen and (max-width: 992px) {
+    font-size: 150px;
+  }
+  @media screen and (max-width: 515px) {
+    font-size: 100px;
+  }
+  @media screen and (max-width: 360px) {
+    font-size: 80px;
+  }
 }
 h2 {
   text-align: center;
@@ -103,14 +115,8 @@ a {
   justify-content: center;
 }
 .container-img {
-  position: relative;
   width: 100%;
-  overflow: hidden;
   img, svg {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
     width: 100%;
     height: auto;
   }
@@ -127,6 +133,16 @@ a {
 .container {
   min-height: 100vh;
   padding-top: 20%;
+  @media screen and (max-width: 992px) {
+    padding-top: 30%;
+  }
+  @media screen and (max-width: 515px) {
+    padding-top: 35%;
+  }
+  @media screen and (max-width: 360px) {
+    font-size: 45%;
+  }
+
   .page-body {
     position: relative;
     top: 0;
@@ -136,8 +152,16 @@ a {
       position: absolute;
       top: 0;
       left: 0;
-      transform: translateY(-50%);
+      transform: translateY(-67%);
+      @media screen and (max-width: 515px) {
+        transform: translateY(-50%);
+      }
     }
-
+    .container-content {
+      position: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
   }
 }

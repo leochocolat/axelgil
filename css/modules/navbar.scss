@@ -24,29 +24,31 @@
       }
     }
   }
-  a {
-    position: relative;
-    margin: auto 15px;
-    font-family: 'Gotham';
-    text-transform: lowercase;
-    font-size: 24px;
-    font-weight: bold;
+  .menu {
+    a {
+      position: relative;
+      margin: auto 15px;
+      font-family: 'Gotham';
+      text-transform: lowercase;
+      font-size: 24px;
+      font-weight: bold;
 
-    &:before {
-      content: '';
-      position: absolute;
-      bottom: 3px;
-      left: -5px;
-      width: 0;
-      height: 8px;
-      background-color: $Blue3;
-      z-index: -1;
-      transition: width .3s ease-in-out;
-    }
-    &:hover {
       &:before {
+        content: '';
+        position: absolute;
+        bottom: 3px;
+        left: -5px;
+        width: 0;
+        height: 8px;
+        background-color: $Blue3;
+        z-index: -1;
         transition: width .3s ease-in-out;
-        width: 100%;
+      }
+      &:hover {
+        &:before {
+          transition: width .3s ease-in-out;
+          width: 100%;
+        }
       }
     }
   }
