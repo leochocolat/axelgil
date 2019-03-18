@@ -1,4 +1,7 @@
 #about {
+  .container {
+    padding-bottom: 0;
+  }
   .page-body {
     .container-content {
       .content {
@@ -15,17 +18,23 @@
           }
         }
         .container-img {
+          margin-right: 0;
           width: 95%;
           max-height: 600px;
           overflow: hidden;
           @media screen and (max-width: 992px) {
             margin-top: 80px;
           }
+          @media screen and (max-width: 768px) {
+            width: 100%;
+          }
         }
         .row-custom {
+          margin: 0;
           justify-content: flex-start;
           align-items: center;
           @media screen and (max-width: 992px) {
+            justify-content: center;
             align-items: flex-start;
           }
         }
@@ -40,7 +49,25 @@
             }
           }
         }
+        .cv-container {
+          padding: 300px 0 100px 0;
+          .row-custom {
+            align-items: flex-start;
+            justify-content: space-around;
+          }
+          p {
+            font-size: 18px;
+          }
+          .elt-cv {
+            margin-bottom: 50px;
+          }
+        }
       }
+    }
+  }
+  .super-container {
+    .container {
+      padding-top: 0;
     }
   }
 

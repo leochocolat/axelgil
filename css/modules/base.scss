@@ -89,6 +89,12 @@ h4 {
   font-size: 32px;
   margin-bottom: 40px;
 }
+h5 {
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 23px;
+  margin-bottom: 40px;
+}
 // CONTENU DIVERS
 p {
   font-size: 14px;
@@ -159,6 +165,7 @@ a {
       transform: translateY(-67%);
       @media screen and (max-width: 515px) {
         transform: translateY(-50%);
+        left: 15px;
       }
     }
     .container-content {
@@ -167,5 +174,14 @@ a {
       left: 0;
       width: 100%;
     }
+  }
+}
+.radius-container {
+  width: 100%;
+  height: 300px;
+  .radius {
+    height: 100%;
+    border-radius: 0 0 50% 50%;
+    animation: radius 1s forwards;
   }
 }
