@@ -80,7 +80,8 @@
   </div>
 
   <div class="footer">
-    © 2019 AXEL GIL
+    <canvas id="myCanvas"></canvas>
+    <div>© 2019 AXEL GIL</div>
   </div>
 
 
@@ -94,7 +95,69 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-  <!-- <script src="js/main.js"></script> -->
+  <!-- Load the Paper.js library -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.9.25/paper-full.min.js"></script>
+  <!-- <script type="text/paperscript" src="../js/paper-footer.js" canvas="myCanvas"></script> -->
+  <script type="text/paperscript" canvas="myCanvas">
+    var width, height, center;
+    var points = 4;
+    var points1 = 6;
+    var smooth = true;
+    var path1 = new Path();
+    var path = new Path();
+    var mousePos = view.center / 2;
+    var pathHeight = mousePos.y;
+    path.fillColor = '#4f6ab1';
+    path1.fillColor = '#95b8e2';
+    initializePath();
+
+    function initializePath() {
+    	center = view.center;
+    	width = view.size.width;
+    	height = view.size.height/2;
+    	path.segments = [];
+    	path.add(view.bounds.bottomLeft);
+      path1.segments = [];
+    	path1.add(view.bounds.bottomLeft);
+    	for (var i = 1; i < points; i++) {
+    		var point = new Point(width / points * i*.5, center.y);
+    		path.add(point);
+    	}
+      path.add(view.bounds.bottomRight);
+      for (var i = 1; i < points1; i++) {
+        var point1 = new Point(width / points * i, center.y);
+        path1.add(point1);
+    	}
+      path1.add(view.bounds.bottomRight);
+    }
+
+    function onFrame(event) {
+    	pathHeight += (center.y - mousePos.y - pathHeight) / 10;
+    	for (var i = 1; i < points; i++) {
+    		var sinSeed = event.count + (i + i % 10) * 100;
+    		var sinHeight = Math.sin(sinSeed / 200) * pathHeight;
+    		var yPos = Math.sin(sinSeed / 100) * sinHeight + height;
+    		path.segments[i].point.y = yPos;
+        path1.segments[i].point.y = yPos;
+    	}
+    	if (smooth)
+    		path.smooth({ type: 'continuous' });
+        path1.smooth({ type: 'continuous' });
+    }
+
+    // INTERACTIONS
+    function onMouseMove(event) {
+    	mousePos = event.point;
+    }
+    function onMouseLeave(e) {
+      mousePos = 1;
+    }
+    // Reposition the path whenever the window is resized:
+    function onResize(event) {
+    	initializePath();
+    }
+  </script>
+
 
 </body>
 </html>
