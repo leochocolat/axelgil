@@ -135,7 +135,8 @@ a {
 }
 //LAYOUT
 .container {
-  padding: 20% 0 100px 0;
+  position: relative;
+  padding: 18% 0 100px 0;
   @media screen and (max-width: 992px) {
     padding-top: 30%;
   }

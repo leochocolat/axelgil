@@ -155,7 +155,8 @@ a {
   border-radius: 15px; }
 
 .container {
-  padding: 20% 0 100px 0; }
+  position: relative;
+  padding: 18% 0 100px 0; }
   @media screen and (max-width: 992px) {
     .container {
       padding-top: 30%; } }
@@ -285,13 +286,13 @@ a {
         border-radius: 5px; }
 
 .footer {
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   padding: 15px;
   width: 100%;
   text-align: center; }
-  .footer div {
-    color: white; }
-  .footer #myCanvas {
+  .footer #myCanvas, .footer #myCanvas1 {
     z-index: -1;
     position: absolute;
     left: 0;
@@ -356,7 +357,7 @@ a {
     font-size: 60px; } }
 
 #contact .page-body .container-content .content h4 {
-  margin-top: 50px; }
+  margin-top: 80px; }
 
 #contact .page-body .container-content .content .container-text {
   margin-left: 2rem; }
