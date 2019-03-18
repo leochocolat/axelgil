@@ -75,6 +75,9 @@ body {
 .purple3 {
   color: #5e3d91; }
 
+.white {
+  color: white; }
+
 h1 {
   text-transform: lowercase;
   font-size: 210px;
@@ -133,6 +136,7 @@ a {
     text-decoration: none; }
 
 .row-custom {
+  max-width: 100%;
   -webkit-justify-content: center;
      -moz-box-pack: center;
       -ms-flex-pack: center;
@@ -148,12 +152,10 @@ a {
   display: inline;
   text-align: center;
   padding: 5px 15px;
-  border-radius: 15px;
-  background-color: white; }
+  border-radius: 15px; }
 
 .container {
-  min-height: 100vh;
-  padding-top: 20%; }
+  padding: 20% 0 100px 0; }
   @media screen and (max-width: 992px) {
     .container {
       padding-top: 30%; } }
@@ -284,7 +286,6 @@ a {
 
 .footer {
   padding: 15px;
-  margin-top: 100px;
   width: 100%;
   text-align: center; }
 
@@ -323,6 +324,30 @@ a {
           -ms-flex-align: start;
               align-items: flex-start; } }
 
+#about .page-body .container-content .content .container-btn {
+  margin-top: 50px; }
+  #about .page-body .container-content .content .container-btn a {
+    transition: .1s ease-in-out background-color; }
+    #about .page-body .container-content .content .container-btn a:hover {
+      transition: .1s ease-in-out background-color;
+      color: white;
+      background-color: #688dc9; }
+
+@media screen and (max-width: 768px) {
+  #contact .page-body h1 {
+    font-size: 100px; } }
+
+@media screen and (max-width: 420px) {
+  #contact .page-body h1 {
+    font-size: 80px; } }
+
+@media screen and (max-width: 330px) {
+  #contact .page-body h1 {
+    font-size: 60px; } }
+
+#contact .page-body .container-content .content h4 {
+  margin-top: 50px; }
+
 #contact .page-body .container-content .content .container-text {
   margin-left: 2rem; }
   #contact .page-body .container-content .content .container-text p {
@@ -332,6 +357,13 @@ a {
   width: 100%;
   max-height: 350px;
   overflow: hidden; }
+  @media screen and (max-width: 768px) {
+    #contact .page-body .container-content .content .container-img {
+      margin-top: 50px; } }
+
+@media screen and (max-width: 768px) {
+  #contact .page-body .container-content .content .row {
+    margin: 0; } }
 
 #contact .page-body .container-content .content .row-custom {
   -webkit-justify-content: flex-start;
@@ -342,3 +374,6 @@ a {
      -moz-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+
+#contact .page-body .container-content .content .container-icons .icons img {
+  margin: 15px 3px; }

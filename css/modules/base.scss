@@ -50,6 +50,9 @@ body {
 .purple3 {
   color: #5e3d91;
 }
+.white {
+  color: white;
+}
 // TITRES
 h1 {
   text-transform: lowercase;
@@ -112,6 +115,7 @@ a {
 }
 // BLOCKS
 .row-custom {
+  max-width: 100%;
   justify-content: center;
 }
 .container-img {
@@ -127,12 +131,11 @@ a {
   text-align: center;
   padding: 5px 15px;
   border-radius: 15px;
-  background-color: white;
+  // background-color: white;
 }
 //LAYOUT
 .container {
-  min-height: 100vh;
-  padding-top: 20%;
+  padding: 20% 0 100px 0;
   @media screen and (max-width: 992px) {
     padding-top: 30%;
   }

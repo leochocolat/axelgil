@@ -1,7 +1,25 @@
 #contact {
   .page-body {
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 100px;
+      }
+    }
+    @media screen and (max-width: 420px) {
+      h1 {
+        font-size: 80px;
+      }
+    }
+    @media screen and (max-width: 330px) {
+      h1 {
+        font-size: 60px;
+      }
+    }
     .container-content {
       .content {
+        h4 {
+          margin-top: 50px;
+        }
         .container-text {
           margin-left: 2rem;
           p {
@@ -12,10 +30,25 @@
           width: 100%;
           max-height: 350px;
           overflow: hidden;
+          @media screen and (max-width: 768px) {
+            margin-top: 50px;
+          }
+        }
+        .row {
+          @media screen and (max-width: 768px) {
+            margin: 0;
+          }
         }
         .row-custom {
           justify-content: flex-start;
           align-items: center;
+        }
+        .container-icons {
+          .icons {
+            img {
+              margin: 15px 3px;
+            }
+          }
         }
       }
     }

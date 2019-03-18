@@ -29,6 +29,17 @@
             align-items: flex-start;
           }
         }
+        .container-btn {
+          margin-top: 50px;
+          a {
+            transition: .1s ease-in-out background-color;
+            &:hover {
+              transition: .1s ease-in-out background-color;
+              color: white;
+              background-color: $Blue2;
+            }
+          }
+        }
       }
     }
   }
