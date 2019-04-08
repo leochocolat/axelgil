@@ -7,9 +7,12 @@
   <meta name="description" content="">
   <title>Axel Gil - Home</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.11.5/paper-full.js"></script>
   <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
+
+  <!-- <canvas id="myCanvas" resize></canvas> -->
 
   <div class="container-fluid">
     <div class="navbar">
@@ -44,10 +47,11 @@
     <div class="page-body">
       <h1>Home</h1>
     </div>
-    <div class="footer">
+    <div id="footer" class="footer">
       <div>© 2019 AXEL GIL</div>
     </div>
   </div>
+  <canvas id="myCanvas" resize></canvas>
 
 
 
@@ -62,6 +66,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+  <script type="text/paperscript" src="js/paper.js" canvas="myCanvas"></script>
   <!-- <script src="js/main.js"></script> -->
 
 </body>
