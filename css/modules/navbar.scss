@@ -65,6 +65,9 @@
         height: 6px;
         border-radius: 5px;
       }
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }
