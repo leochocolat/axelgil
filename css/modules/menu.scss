@@ -1,4 +1,7 @@
 #menu {
+  visibility: hidden;
+  opacity: 0;
+  transition: ease-in-out all .5s;
   z-index: 100;
   position: fixed;
   background-color: white;
@@ -51,6 +54,12 @@
         width: 100%;
       }
     }
+  }
+
+  &.menu-on {
+    transition: ease-in-out all .5s;
+    visibility: visible;
+    opacity: 1;
   }
 
 }

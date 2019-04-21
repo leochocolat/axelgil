@@ -12,9 +12,7 @@ path = new Path.Circle({
 });
 path.fillColor = "#95b8e2"
 path.flatten(10);
-// path.fullySelected = true;
 path.smooth();
-
 
 var circlePos = {
   x: [],
@@ -29,9 +27,9 @@ for(i = 0; i < path.segments.length; i++) {
   circlePosY.push(path.segments[i].point.y);
 }
 
-// console.log(circlePos);
-
-console.log(path.style)
+var simplex = new SimplexNoise();
+var value2d = simplex.noise2D(1, 10);
+console.log(value2d);
 
 $(".menu-elt").mouseenter(function() {
   TweenMax.to(path.style.fillColor, .5, {hue: "+=" + 80 , ease: Power3.easeOut});
@@ -64,5 +62,6 @@ $(".menu-elt").mouseleave(function() {
 });
 
 function onFrame(event) {
+
 	// path.
 }

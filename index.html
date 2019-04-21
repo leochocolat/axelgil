@@ -14,15 +14,15 @@
 
   <!-- <canvas id="myCanvas" resize></canvas> -->
 
-  <div id="menu">
+  <div class="menu-off" id="menu">
     <canvas id="morph-circle"></canvas>
     <div class="container">
       <div class="row row-vertical-align">
         <div class="menu-container">
           <div class="col-12">
-            <div class="menu-elt"><a href="">About</a></div>
-            <div class="menu-elt"><a href="">Work</a></div>
-            <div class="menu-elt"><a href="">Contact</a></div>
+            <div class="menu-elt"><a href="about/index.html">About</a></div>
+            <div class="menu-elt"><a href="work/index.html">Work</a></div>
+            <div class="menu-elt"><a href="contact/index.html">Contact</a></div>
           </div>
         </div>
       </div>
@@ -49,9 +49,9 @@
         </div>
         <div class="d-block d-lg-block menu-burger">
           <div class="burger">
-            <div class="bg-blue3"></div>
-            <div class="bg-blue2"></div>
-            <div class="bg-blue1"></div>
+            <div class="top bg-blue3"></div>
+            <div class="middle bg-blue2"></div>
+            <div class="bottom bg-blue1"></div>
           </div>
         </div>
       </div>
@@ -82,7 +82,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.js"></script>
   <script type="text/paperscript" src="js/paper.js" canvas="myCanvas"></script>
+  <script src="js/modules/menu.js"></script>
   <script type="text/paperscript" src="js/paper-menu.js" canvas="morph-circle"></script>
   <!-- <script src="js/main.js"></script> -->
 

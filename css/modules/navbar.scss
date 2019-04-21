@@ -60,6 +60,7 @@
       right: 0;
       transform: translateY(-20%);
       div {
+        transition: all .3s ease-in-out;
         margin: 2px 0;
         width: 35px;
         height: 6px;
@@ -67,6 +68,17 @@
       }
       &:hover {
         cursor: pointer;
+      }
+      &.close {
+        .top {
+          transform: rotate(45deg) translateY(10.5px);
+        }
+        .middle {
+          opacity: 0;
+        }
+        .bottom {
+          transform: rotate(-45deg) translateY(-10.5px);
+        }
       }
     }
   }

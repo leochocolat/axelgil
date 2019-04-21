@@ -305,12 +305,23 @@ a {
           -ms-transform: translateY(-20%);
               transform: translateY(-20%); }
       .navbar .menu-burger .burger div {
+        transition: all .3s ease-in-out;
         margin: 2px 0;
         width: 35px;
         height: 6px;
         border-radius: 5px; }
       .navbar .menu-burger .burger:hover {
         cursor: pointer; }
+      .navbar .menu-burger .burger.close .top {
+        -webkit-transform: rotate(45deg) translateY(10.5px);
+            -ms-transform: rotate(45deg) translateY(10.5px);
+                transform: rotate(45deg) translateY(10.5px); }
+      .navbar .menu-burger .burger.close .middle {
+        opacity: 0; }
+      .navbar .menu-burger .burger.close .bottom {
+        -webkit-transform: rotate(-45deg) translateY(-10.5px);
+            -ms-transform: rotate(-45deg) translateY(-10.5px);
+                transform: rotate(-45deg) translateY(-10.5px); }
 
 .footer {
   position: absolute;
@@ -333,6 +344,9 @@ a {
   height: 120px; }
 
 #menu {
+  visibility: hidden;
+  opacity: 0;
+  transition: ease-in-out all .5s;
   z-index: 100;
   position: fixed;
   background-color: white;
@@ -373,6 +387,10 @@ a {
     #menu a:hover:before {
       transition: width .3s ease-in-out;
       width: 100%; }
+  #menu.menu-on {
+    transition: ease-in-out all .5s;
+    visibility: visible;
+    opacity: 1; }
 
 #about .container {
   padding-bottom: 0; }
