@@ -469,6 +469,14 @@ a {
 #about #myCanvas {
   width: 98.9vw; }
 
+#work .row-custom {
+  padding: 0 10%;
+  padding: 20% 0 20% 0;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
 @media screen and (max-width: 768px) {
   #contact .page-body h1 {
     font-size: 100px; } }
