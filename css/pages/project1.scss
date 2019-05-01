@@ -1,0 +1,27 @@
+.project-template-1 {
+
+  .row-custom {
+    margin-bottom: 250px;
+    justify-content: space-around;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+      margin: auto;
+    }
+  }
+
+  .desc-container {
+    .elt-description {
+      margin: 50px auto;
+      h5 {
+        margin-bottom: 10px;
+      }
+      & * {
+        text-align: center;
+      }
+    }
+  }
+
+
+
+}
