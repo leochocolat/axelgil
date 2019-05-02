@@ -6,6 +6,9 @@ var view = {
   y: window.innerHeight,
 }
 
+canvas.width = view.x;
+canvas.height = view.y;
+
 path = new Path.Circle({
   center: [view.x/2, view.y/2],
   radius: view.y/4
@@ -63,5 +66,4 @@ $(".menu-elt").mouseleave(function() {
 
 function onFrame(event) {
 
-	// path.
-}
+};

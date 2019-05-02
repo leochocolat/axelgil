@@ -68,7 +68,6 @@ function onResize() {
 
 	size = view.bounds.size * [2, 1];
 	path = createPath(0.1);
-	// path1 = path.clone();
 }
 
 function onMouseMove(event) {
@@ -142,16 +141,6 @@ $(document).ready(function() {
     if(y.y <= canvas.height) {
       pointsY.push(y);
     }
-  }
+  };
 
-  // var anim = new TimelineMax({
-	// 	repeat: -1
-  // });
-  // anim.add([
-	// 	TweenMax.staggerTo(pointsY, .3, {y: "+=" + 40}, .05),
-	// 	TweenMax.staggerTo(pointsY, .3, {y: "-=" + 40, delay: .3}, .05)
-	// ])
-	// .add(
-  //   TweenMax.staggerTo(pointsY, .3, {y: "-=" + 40}, -.05)
-  // );
 });
