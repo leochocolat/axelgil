@@ -496,13 +496,16 @@ a {
 #about #myCanvas {
   width: 98.9vw; }
 
-#work .row-custom {
-  padding: 0 10%;
-  padding: 20% 0 20% 0;
-  -webkit-justify-content: space-between;
-     -moz-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+@media screen and (max-width: 992px) {
+  #work .elt-project {
+    margin: 0 100px 100px 100px; } }
+
+@media screen and (max-width: 576px) {
+  #work .elt-project {
+    margin: 0 60px 50px 60px; } }
+
+#work .container-project {
+  margin: 0 50px; }
 
 @media screen and (max-width: 768px) {
   #contact .page-body h1 {

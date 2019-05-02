@@ -27,9 +27,9 @@ for(i = 0; i < path.segments.length; i++) {
   circlePosY.push(path.segments[i].point.y);
 }
 
-var simplex = new SimplexNoise();
-var value2d = simplex.noise2D(1, 10);
-console.log(value2d);
+// var simplex = new SimplexNoise();
+// var value2d = simplex.noise2D(1, 10);
+// console.log(value2d);
 
 $(".menu-elt").mouseenter(function() {
   TweenMax.to(path.style.fillColor, .5, {hue: "+=" + 80 , ease: Power3.easeOut});
