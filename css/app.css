@@ -157,7 +157,6 @@ a {
           align-items: center; }
 
 .row-custom {
-  max-width: 100%;
   -webkit-justify-content: center;
      -moz-box-pack: center;
       -ms-flex-pack: center;
