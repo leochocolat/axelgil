@@ -32,25 +32,31 @@ body {
   background-color: $Purple3;
 }
 .blue {
-  color: #081757;
+  color: #081757 !important;
 }
 .blue1 {
-  color: #4f6ab1;
+  color: #4f6ab1 !important;
 }
 .blue2 {
-  color: #688dc9;
+  color: #688dc9 !important;
 }
 .blue3 {
-  color: #95b8e2;
+  color: #95b8e2 !important;
 }
 .purple1 {
-  color: #4d4a9a;
+  color: #4d4a9a !important;
 }
 .purple2 {
-  color: #4a3f92;
+  color: #4a3f92 !important;
 }
 .purple3 {
-  color: #5e3d91;
+  color: #5e3d91 !important;
+}
+.grey {
+  color: $Grey !important;
+}
+.grey1 {
+  color: $Grey1 !important;
 }
 .white {
   color: white;

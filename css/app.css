@@ -57,25 +57,31 @@ body {
   background-color: #5e3d91; }
 
 .blue {
-  color: #081757; }
+  color: #081757 !important; }
 
 .blue1 {
-  color: #4f6ab1; }
+  color: #4f6ab1 !important; }
 
 .blue2 {
-  color: #688dc9; }
+  color: #688dc9 !important; }
 
 .blue3 {
-  color: #95b8e2; }
+  color: #95b8e2 !important; }
 
 .purple1 {
-  color: #4d4a9a; }
+  color: #4d4a9a !important; }
 
 .purple2 {
-  color: #4a3f92; }
+  color: #4a3f92 !important; }
 
 .purple3 {
-  color: #5e3d91; }
+  color: #5e3d91 !important; }
+
+.grey {
+  color: #777777 !important; }
+
+.grey1 {
+  color: #B7B6B6 !important; }
 
 .white {
   color: white; }
@@ -584,3 +590,95 @@ a {
     margin-bottom: 10px; }
   .project-template-1 .desc-container .elt-description * {
     text-align: center; }
+
+.project-template-3 h3 {
+  margin: 30px auto;
+  color: #4f6ab1;
+  letter-spacing: 4px; }
+
+.project-template-3 p {
+  color: #777777; }
+
+.project-template-3 .head-description-container {
+  margin-bottom: 150px; }
+
+.project-template-3 .container-project {
+  margin: 100px auto; }
+
+.project-template-3 .quote h4 {
+  text-align: center;
+  margin: 0; }
+
+.project-template-3 .quote p {
+  font-size: 18px;
+  text-align: center;
+  color: #B7B6B6; }
+
+.project-template-3 .container-img .img-description {
+  width: 60%;
+  font-size: 18px;
+  position: absolute;
+  left: 0;
+  bottom: 0; }
+
+.project-template-3 .blue-section {
+  background-color: #4f6ab1;
+  height: 300px;
+  margin: 100px auto; }
+
+.project-template-3 .video-title {
+  position: relative;
+  margin-bottom: 50px; }
+  .project-template-3 .video-title span {
+    text-transform: lowercase;
+    position: absolute;
+    top: 100%;
+    left: 0; }
+    .project-template-3 .video-title span.uppercase {
+      text-transform: uppercase; }
+
+.project-template-3 .container-project-images {
+  margin-top: 100px; }
+
+.project-template-3 .row-custom {
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.project-template-3 .row-custom1 {
+  -webkit-align-items: baseline;
+     -moz-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline; }
+
+.project-template-3 .container-project-video p {
+  margin: 25px auto; }
+
+.project-template-3 .container-icons {
+  margin-top: 80px; }
+  .project-template-3 .container-icons .container-img {
+    margin: auto;
+    width: 50%;
+    height: auto; }
+  .project-template-3 .container-icons p {
+    color: #B7B6B6;
+    text-align: center; }
+
+.project-template-3 .container-video {
+  margin-bottom: 50px;
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0; }
+  .project-template-3 .container-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+.project-template-3 .questions-container .question {
+  text-transform: uppercase;
+  color: #4f6ab1; }
