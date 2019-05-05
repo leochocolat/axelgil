@@ -10,6 +10,10 @@
     color : $Grey;
   }
 
+  .h3-with-subtitle {
+    margin-bottom: 0;
+  }
+
   .head-description-container {
     margin-bottom: 150px;
   }
@@ -117,6 +121,26 @@
     .question {
       text-transform: uppercase;
       color: $Blue1;
+    }
+  }
+
+  .container-quote {
+    position: relative;
+    margin-top: 100px;
+
+    &:before {
+      content: url("../images/GILLETTE-QUESTION.png");
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateY(-80%);
+    }
+    &:after {
+      content: url("../images/GILLETTE-QUESTION.png");
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transform: translateY(80%) rotate(180deg);
     }
   }
 

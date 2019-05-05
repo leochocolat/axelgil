@@ -598,6 +598,9 @@ a {
 .project-template-3 p {
   color: #777777; }
 
+.project-template-3 .h3-with-subtitle {
+  margin-bottom: 0; }
+
 .project-template-3 .head-description-container {
   margin-bottom: 150px; }
 
@@ -689,6 +692,26 @@ a {
 .project-template-3 .questions-container .question {
   text-transform: uppercase;
   color: #4f6ab1; }
+
+.project-template-3 .container-quote {
+  position: relative;
+  margin-top: 100px; }
+  .project-template-3 .container-quote:before {
+    content: url("../images/GILLETTE-QUESTION.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: translateY(-80%);
+        -ms-transform: translateY(-80%);
+            transform: translateY(-80%); }
+  .project-template-3 .container-quote:after {
+    content: url("../images/GILLETTE-QUESTION.png");
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    -webkit-transform: translateY(80%) rotate(180deg);
+        -ms-transform: translateY(80%) rotate(180deg);
+            transform: translateY(80%) rotate(180deg); }
 
 .project-template-3 .container-img-custom {
   overflow: hidden; }
