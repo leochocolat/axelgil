@@ -605,6 +605,14 @@ a {
 .project-template-3 .container-project {
   margin: 100px auto; }
 
+@media screen and (max-width: 768px) {
+  .project-template-3 .responsive-reverse {
+    -webkit-flex-direction: column-reverse;
+       -moz-box-orient: vertical;
+       -moz-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; } }
+
 .project-template-3 .quote h4 {
   text-align: center;
   margin: 0; }
@@ -682,3 +690,9 @@ a {
 .project-template-3 .questions-container .question {
   text-transform: uppercase;
   color: #4f6ab1; }
+
+.project-template-3 .container-img-custom {
+  overflow: hidden; }
+  .project-template-3 .container-img-custom img {
+    width: 100%;
+    height: auto; }

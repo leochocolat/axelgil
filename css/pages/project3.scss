@@ -18,6 +18,12 @@
     margin: 100px auto;
   }
 
+  .responsive-reverse {
+    @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+    }
+  }
+
   .quote {
     h4 {
       text-align: center;
@@ -58,11 +64,10 @@
         text-transform: uppercase;
       }
     }
-
   }
 
   .container-project-images {
-    margin-top: 100px; 
+    margin-top: 100px;
   }
 
   .row-custom {
@@ -74,11 +79,9 @@
   }
 
   .container-project-video {
-
     p {
       margin: 25px auto;
     }
-
   }
 
   .container-icons {
@@ -114,6 +117,15 @@
     .question {
       text-transform: uppercase;
       color: $Blue1;
+    }
+  }
+
+  .container-img-custom {
+    // display: none;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: auto;
     }
   }
 
