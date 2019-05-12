@@ -11,6 +11,7 @@
   max-height: 100vw;
 
   #morph-circle {
+    background-color: white;
     position: absolute;
     left: 0;
     top: 0;
@@ -35,7 +36,6 @@
     line-height: 120%;
     position: relative;
     margin: auto 15px;
-    font-family: 'Gotham';
 
     &:before {
       content: '';
@@ -53,6 +53,13 @@
         transition: width .3s ease-in-out;
         width: 100%;
       }
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 60px;
+    }
+    @media screen and (max-width: 400px) {
+      font-size: 45px;
     }
   }
 
