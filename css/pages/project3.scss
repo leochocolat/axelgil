@@ -28,6 +28,19 @@
     }
   }
 
+   .kill-margin-b {
+     margin-bottom: 0;
+     transform: translateY(10%);
+   }
+   .kill-margin {
+     margin-top: 0;
+     margin-bottom: 0;
+   }
+   .kill-margin-t {
+     transform: translateY(-10%);
+     margin-top: 0;
+   }
+
   .quote {
     h4 {
       text-align: center;
@@ -51,9 +64,105 @@
   }
 
   .blue-section {
+    position: relative;
+    color: white;
     background-color: $Blue1;
-    height: 300px;
-    margin: 100px auto;
+
+    @media screen and (max-width: 992px) {
+      height: auto;
+    }
+
+
+
+    .vertical {
+      letter-spacing: normal;
+      white-space: nowrap;
+      position: absolute;
+      left: 50px;
+      top: 50%;
+      transform: translateY(-50%) translateX(-50%) rotate(-90deg);
+      margin: 0;
+      color: white;
+      font-size: 50px;
+    }
+
+    .container-content-blue-section {
+      color: white;
+      padding-left: 100px;
+      width: 80%;
+      margin: auto;
+      height: 100%;
+      text-align: center;
+      height: 550px;
+
+      @media screen and (max-width: 992px) {
+        width: 90%;
+      }
+      @media screen and (max-width: 768px) {
+        height: auto;
+      }
+
+      .row-custom {
+        align-items: center;
+        width: 100%;
+        height: 100%;
+      }
+
+      .number {
+        font-size: 100px;
+
+        @media screen and (max-width: 500px) {
+          font-size: 70px;
+        }
+        @media screen and (max-width: 400px) {
+          font-size: 50px;
+        }
+      }
+
+      .text {
+        min-height: 50px;
+      }
+
+      .bottom-text {
+        text-align: left;
+        width: 40%;
+
+        @media screen and (max-width: 992px) {
+          width: 60%;
+        }
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          text-align: center;
+          margin: 50px auto;
+        }
+
+      }
+
+    }
+    &.custom {
+      text-align: left !important;
+      h3 {
+        margin: 50px auto 0 auto;
+        text-align: left;
+        font-size: 80px;
+        color: white;
+        letter-spacing: normal;
+        text-transform: uppercase;
+        @media screen and (max-width: 768px) {
+          font-size: 50px;
+        }
+      }
+
+      .quote {
+        font-size: 30px;
+        margin-bottom: 50px;
+        @media screen and (max-width: 768px) {
+          font-size: 20px;
+        }
+      }
+
+    }
+    // margin: 100px auto;
   }
 
   .video-title {

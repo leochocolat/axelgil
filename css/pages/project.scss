@@ -1,10 +1,37 @@
 #project {
 
+  h1.project-title {
+    margin-top: 150px;
+    font-size: 150px;
+    color: white;
+    text-transform: uppercase;
+
+    &.custom {
+      text-align: right;
+      @media screen and (max-width: 992px) {
+        text-align: center;
+      }
+    }
+
+    @media screen and (max-width: 992px) {
+      text-align: center;
+      margin-top: 100px;
+      font-size: 100px;
+    }
+
+    @media screen and (max-width: 557px) {
+      text-align: center;
+      margin-top: 100px;
+      font-size: 50px;
+    }
+
+  }
+
   .banner {
     position: relative;
     min-height: 100vh;
     overflow: hidden;
-    img {
+    .img-banner {
       width: 100vw;
       height: 100vh;
       object-fit: cover;
@@ -12,6 +39,16 @@
       top: 0;
       left: 0;
     }
+
+    img.brand {
+      position: absolute;
+      bottom: 40px;
+      width: 100px;
+      height: auto;
+      right: 50px;
+    }
+
+
   }
 
 
