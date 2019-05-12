@@ -10,7 +10,7 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.11.5/paper-full.js"></script>
   <link rel="stylesheet" href="css/app.css">
 </head>
-<body>
+<body id="home">
 
   <!-- <canvas id="myCanvas" resize></canvas> -->
 
@@ -60,13 +60,19 @@
 
   <div class="container">
     <div class="page-body">
-      <iframe id="video-background" src="https://www.youtube.com/embed/xHLahXpTQNE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
       <!-- <h1>Home</h1> -->
     </div>
     <div id="footer" class="footer">
       <div>© 2019 AXEL GIL</div>
     </div>
     <canvas id="myCanvas" resize></canvas>
+  </div>
+
+  <div class="video-container">
+    <img class="video-load-image" src="images/cv-video.jpg" alt="">
+    <video id="video" src="cv-video.mp4" autoplay loop></video>
   </div>
 
 
@@ -84,6 +90,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.js"></script>
+  <script src="js/video.js"></script>
   <script type="text/paperscript" src="js/paper.js" canvas="myCanvas"></script>
   <script src="js/modules/menu.js"></script>
   <script type="text/paperscript" src="js/paper-menu.js" canvas="morph-circle"></script>

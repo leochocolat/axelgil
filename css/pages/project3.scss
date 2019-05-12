@@ -30,14 +30,12 @@
 
    .kill-margin-b {
      margin-bottom: 0;
-     transform: translateY(10%);
    }
    .kill-margin {
      margin-top: 0;
      margin-bottom: 0;
    }
    .kill-margin-t {
-     transform: translateY(-10%);
      margin-top: 0;
    }
 
@@ -71,9 +69,6 @@
     @media screen and (max-width: 992px) {
       height: auto;
     }
-
-
-
     .vertical {
       letter-spacing: normal;
       white-space: nowrap;
