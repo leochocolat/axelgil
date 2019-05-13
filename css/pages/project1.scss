@@ -1,5 +1,9 @@
 .project-template-1 {
 
+  .blue-container {
+    background-color: $Blue1;
+  }
+
   .row-custom {
     margin-bottom: 250px;
     justify-content: space-around;
@@ -20,6 +24,11 @@
         text-align: center;
       }
     }
+  }
+
+  .kill-margin-padding {
+    margin: 0 auto !important;
+    padding: 100px auto !important;
   }
 
 

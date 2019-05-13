@@ -1,14 +1,21 @@
 @font-face {
-  font-family: GothamPro;
+  font-family: GothamProRegular;
   src: url(../fonts/GothamPro.eot);
   src: url(../fonts/GothamPro.woff2) format("woff2"), url(../fonts/GothamPro.woff) format("woff"), url(../fonts/GothamPro.ttf) format("truetype"), url(../fonts/GothamPro.svg#GothamPro) format("svg"), url(../fonts/GothamPro.eot?#iefix) format("embedded-opentype");
   font-weight: 200;
   font-style: normal; }
 
 @font-face {
-  font-family: GothamPro;
+  font-family: GothamProMedium;
   src: url(../fonts/GothamPro-Medium.eot);
   src: url(../fonts/GothamPro-Medium.woff2) format("woff2"), url(../fonts/GothamPro-Medium.woff) format("woff"), url(../fonts/GothamPro-Medium.ttf) format("truetype"), url(../fonts/GothamPro-Medium.svg#GothamPro-Medium) format("svg"), url(../fonts/GothamPro-Medium.eot?#iefix) format("embedded-opentype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: GothamProLight;
+  src: url(../fonts/GothamPro-Light.eot);
+  src: url(../fonts/GothamPro-Light.woff2) format("woff2"), url(../fonts/GothamPro-Light.woff) format("woff"), url(../fonts/GothamPro-Light.ttf) format("truetype"), url(../fonts/GothamPro-Medium.svg#GothamPro-Light) format("svg"), url(../fonts/GothamPro-Light.eot?#iefix) format("embedded-opentype");
   font-weight: 400;
   font-style: normal; }
 
@@ -29,7 +36,7 @@ body {
   max-width: 100%;
   color: #081757;
   background-color: white;
-  font-family: "GothamProBold", "Gotham", Arial, sans-serif;
+  font-family: "GothamProLight", "Gotham", Arial, sans-serif;
   font-weight: 800; }
 
 .container {
@@ -87,6 +94,7 @@ body {
   color: white; }
 
 h1 {
+  font-family: "GothamProBold", "Gotham", Arial, sans-serif;
   text-transform: lowercase;
   font-size: 210px;
   color: #c7cbd9; }
@@ -111,17 +119,20 @@ h2 {
   font-family: "GothamPro", "Gotham", Arial, sans-serif; }
 
 h3 {
+  font-family: "GothamProMedium", "Gotham", Arial, sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-size: 30px;
   font-family: "GothamPro", "Gotham", Arial, sans-serif; }
 
 h4 {
+  font-family: "GothamProBold", "Gotham", Arial, sans-serif;
   text-align: left;
   font-size: 32px;
   margin-bottom: 40px; }
 
 h5 {
+  font-family: "GothamPro", "Gotham", Arial, sans-serif;
   text-transform: uppercase;
   text-align: left;
   font-size: 23px;
@@ -139,6 +150,7 @@ p {
   text-align: center; }
 
 .email {
+  font-family: "GothamPro", "Gotham", Arial, sans-serif;
   font-size: 18px;
   text-align: center; }
 
@@ -244,6 +256,21 @@ a {
     -webkit-animation: radius 1s forwards;
             animation: radius 1s forwards; }
 
+.light {
+  font-family: "GothamProLight", "Gotham", Arial, sans-serif; }
+
+.regular {
+  font-family: "GothamProRegular", "Gotham", Arial, sans-serif; }
+
+.medium {
+  font-family: "GothamProMedium", "Gotham", Arial, sans-serif; }
+
+.bold {
+  font-family: "GothamPro", "Gotham", Arial, sans-serif; }
+
+.black {
+  font-family: "GothamProBold", "Gotham", Arial, sans-serif; }
+
 #theme {
   margin: 100px; }
   #theme section {
@@ -283,14 +310,14 @@ a {
     height: 150px; }
 
 .navbar {
-  background: linear-gradient(#ffffff, 50%, transparent);
+  background: white;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
   width: 100%;
   padding-top: 15px;
-  padding-bottom: 100px;
+  padding-bottom: 20px;
   -webkit-align-items: flex-end;
      -moz-box-align: end;
       -ms-flex-align: end;
@@ -355,6 +382,7 @@ a {
                 transform: rotate(-45deg) translateY(-10.5px); }
 
 .footer {
+  font-family: "GothamPro", "Gotham", Arial, sans-serif;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -375,6 +403,7 @@ a {
   height: 120px; }
 
 #menu {
+  font-family: "GothamProBold", "Gotham", Arial, sans-serif;
   visibility: hidden;
   opacity: 0;
   transition: ease-in-out all .5s;
@@ -547,6 +576,11 @@ a {
     font-size: 18px; }
   #about .page-body .container-content .content .cv-container .elt-cv {
     margin-bottom: 50px; }
+    #about .page-body .container-content .content .cv-container .elt-cv p {
+      font-size: 16px;
+      font-family: "GothamProMedium", "Gotham", Arial, sans-serif; }
+      #about .page-body .container-content .content .cv-container .elt-cv p span {
+        font-family: "GothamProLight", "Gotham", Arial, sans-serif; }
 
 #about .super-container .container {
   padding-top: 0; }
@@ -587,8 +621,7 @@ a {
 
 #contact .page-body .container-content .content .container-img {
   width: 100%;
-  max-height: 350px;
-  overflow: hidden; }
+  max-height: 350px; }
   @media screen and (max-width: 768px) {
     #contact .page-body .container-content .content .container-img {
       margin-top: 50px; } }
@@ -609,6 +642,9 @@ a {
 
 #contact .page-body .container-content .content .container-icons .icons img {
   margin: 15px 3px; }
+
+#project h4 {
+  font-family: "GothamProMedium", "Gotham", Arial, sans-serif !important; }
 
 #project h1.project-title {
   margin-top: 150px;
@@ -649,6 +685,27 @@ a {
     width: 100px;
     height: auto;
     right: 50px; }
+    #project .banner img.brand.left {
+      left: 50px; }
+      @media screen and (max-width: 500px) {
+        #project .banner img.brand.left {
+          left: 20px; } }
+    @media screen and (max-width: 500px) {
+      #project .banner img.brand {
+        right: 20px; } }
+  #project .banner .award {
+    max-width: 70%;
+    text-align: right;
+    position: absolute;
+    right: 50px;
+    bottom: 80px; }
+    @media screen and (max-width: 500px) {
+      #project .banner .award {
+        right: 20px;
+        font-size: 12px; } }
+
+.project-template-1 .blue-container {
+  background-color: #4f6ab1; }
 
 .project-template-1 .row-custom {
   margin-bottom: 250px;
@@ -670,7 +727,12 @@ a {
   .project-template-1 .desc-container .elt-description * {
     text-align: center; }
 
+.project-template-1 .kill-margin-padding {
+  margin: 0 auto !important;
+  padding: 100px auto !important; }
+
 .project-template-3 h3 {
+  font-family: "GothamProMedium", "Gotham", Arial, sans-serif;
   margin: 30px auto;
   color: #4f6ab1;
   letter-spacing: 4px; }
@@ -762,6 +824,7 @@ a {
       width: 100%;
       height: 100%; }
     .project-template-3 .blue-section .container-content-blue-section .number {
+      font-family: "GothamProRegular", "Gotham", Arial, sans-serif;
       font-size: 100px; }
       @media screen and (max-width: 500px) {
         .project-template-3 .blue-section .container-content-blue-section .number {
@@ -770,6 +833,7 @@ a {
         .project-template-3 .blue-section .container-content-blue-section .number {
           font-size: 50px; } }
     .project-template-3 .blue-section .container-content-blue-section .text {
+      font-family: "GothamProLight", "Gotham", Arial, sans-serif;
       min-height: 50px; }
     .project-template-3 .blue-section .container-content-blue-section .bottom-text {
       text-align: left;
@@ -822,10 +886,10 @@ a {
           align-items: center; }
 
 .project-template-3 .row-custom1 {
-  -webkit-align-items: baseline;
-     -moz-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline; }
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .project-template-3 .container-project-video p {
   margin: 25px auto; }
@@ -855,8 +919,12 @@ a {
     height: 100%; }
 
 .project-template-3 .questions-container .question {
+  font-family: "GothamProRegular", "Gotham", Arial, sans-serif;
   text-transform: uppercase;
   color: #4f6ab1; }
+
+.project-template-3 .questions-container .answer {
+  min-height: 65px; }
 
 .project-template-3 .container-quote {
   position: relative;

@@ -1,6 +1,7 @@
 .project-template-3 {
 
   h3 {
+    font-family: $medium;
     margin: 30px auto;
     color: $Blue1;
     letter-spacing: 4px;
@@ -104,6 +105,7 @@
       }
 
       .number {
+        font-family: $regular;
         font-size: 100px;
 
         @media screen and (max-width: 500px) {
@@ -115,6 +117,7 @@
       }
 
       .text {
+        font-family: $light;
         min-height: 50px;
       }
 
@@ -183,7 +186,7 @@
   }
 
   .row-custom1 {
-    align-items: baseline;
+    align-items: center;
   }
 
   .container-project-video {
@@ -223,8 +226,12 @@
 
   .questions-container {
     .question {
+      font-family: $regular;
       text-transform: uppercase;
       color: $Blue1;
+    }
+    .answer {
+      min-height: 65px;
     }
   }
 

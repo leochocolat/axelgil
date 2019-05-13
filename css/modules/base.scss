@@ -3,7 +3,7 @@ body {
   max-width: 100%;
   color: $mainColor;
   background-color: white;
-  font-family: $black;
+  font-family: $light;
   font-weight: 800;
 }
 .container {
@@ -63,6 +63,7 @@ body {
 }
 // TITRES
 h1 {
+  font-family: $black;
   text-transform: lowercase;
   font-size: 210px;
   color: #c7cbd9;
@@ -87,17 +88,20 @@ h2 {
   font-family: $bold;
 }
 h3 {
+  font-family: $medium;
   text-align: center;
   text-transform: uppercase;
   font-size: 30px;
   font-family: $bold;
 }
 h4 {
+  font-family: $black;
   text-align: left;
   font-size: 32px;
   margin-bottom: 40px;
 }
 h5 {
+  font-family: $bold;
   text-transform: uppercase;
   text-align: left;
   font-size: 23px;
@@ -116,6 +120,7 @@ p {
   text-align: center;
 }
 .email {
+  font-family: $bold;
   font-size: 18px;
   text-align: center;
 }
@@ -222,3 +227,33 @@ a {
     animation: radius 1s forwards;
   }
 }
+//fonts
+.light {
+  font-family: $light;
+}
+.regular {
+  font-family: $regular;
+}
+.medium {
+  font-family: $medium;
+}
+.bold {
+  font-family: $bold;
+}
+.black {
+  font-family: $black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//

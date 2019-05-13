@@ -1,5 +1,9 @@
 #project {
 
+  h4 {
+    font-family: $medium !important;
+  }
+
   h1.project-title {
     margin-top: 150px;
     font-size: 150px;
@@ -46,8 +50,30 @@
       width: 100px;
       height: auto;
       right: 50px;
+
+      &.left {
+        left: 50px;
+        @media screen and (max-width: 500px) {
+          left: 20px;
+        }
+      }
+
+      @media screen and (max-width: 500px) {
+        right: 20px;
+      }
     }
 
+    .award {
+      max-width: 70%;
+      text-align: right;
+      position: absolute;
+      right: 50px;
+      bottom: 80px;
+      @media screen and (max-width: 500px) {
+        right: 20px;
+        font-size: 12px;
+      }
+    }
 
   }
 

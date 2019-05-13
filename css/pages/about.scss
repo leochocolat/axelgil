@@ -60,6 +60,15 @@
           }
           .elt-cv {
             margin-bottom: 50px;
+
+            p {
+              font-size: 16px;
+              font-family: $medium;
+
+              & span {
+                font-family: $light;
+              }
+            }
           }
         }
       }
