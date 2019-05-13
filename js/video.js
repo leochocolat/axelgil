@@ -1,12 +1,10 @@
 var video = document.getElementById("video");
 
 
-video.addEventListener('load', function() {
-
-  
-
-
-});
+$("#video").ready(function() {
+  console.log('loaded');
+  TweenMax.to(video, .5, {autoAlpha: 1});
+})
 
 video.addEventListener('click', function() {
 
