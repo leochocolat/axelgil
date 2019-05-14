@@ -6,12 +6,12 @@ $("#video").ready(function() {
   TweenMax.to(video, .5, {autoAlpha: 1});
 })
 
-video.addEventListener('click', function() {
-
-  if(video.muted == false) {
-    video.muted = true
-  } else {
-    video.muted = false
-  }
-
-});
+// video.addEventListener('click', function() {
+//
+//   if(video.muted == false) {
+//     video.muted = true
+//   } else {
+//     video.muted = false
+//   }
+//
+// });

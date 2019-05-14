@@ -271,6 +271,11 @@ a {
 .black {
   font-family: "GothamProBold", "Gotham", Arial, sans-serif; }
 
+video::-webkit-media-controls-panel {
+  background-image: none !important;
+  -webkit-filter: brightness(0.4);
+          filter: brightness(0.4); }
+
 #theme {
   margin: 100px; }
   #theme section {
@@ -705,7 +710,8 @@ a {
         font-size: 12px; } }
 
 .project-template-1 .blue-container {
-  background-color: #4f6ab1; }
+  background-color: #4f6ab1;
+  color: white; }
 
 .project-template-1 .row-custom {
   margin-bottom: 250px;
