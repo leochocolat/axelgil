@@ -1,5 +1,6 @@
 var canvas = document.getElementById("myCanvas");
 var footer = document.getElementById("footer");
+canvas.stye.display = "none";
 
 var values = {
 	friction: 0.8,
@@ -131,6 +132,8 @@ function updateWave(path) {
 	for (var j = 0, l = springs.length; j < l; j++) {
 		springs[j].update();
 	}
+	path.closed = true;
+	path1.closed = true;
 	path.smooth({type:'continuous'});
 	path1.smooth({type:'continuous'});
 }

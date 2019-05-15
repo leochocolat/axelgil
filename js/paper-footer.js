@@ -7,7 +7,7 @@ var path = new Path();
 var mousePos = view.center / 2;
 var pathHeight = mousePos.y;
 path.fillColor = 'black';
-initializePath();
+// initializePath();
 
 function initializePath() {
   center = view.center;
