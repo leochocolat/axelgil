@@ -491,8 +491,6 @@ video::-webkit-media-controls-panel {
 
 #home {
   overflow: hidden; }
-  #home .navbar {
-    background: none; }
   #home .video-container {
     background-color: white;
     position: absolute;

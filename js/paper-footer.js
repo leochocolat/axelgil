@@ -20,6 +20,7 @@ function initializePath() {
     path.add(point);
   }
   path.add(view.bounds.bottomRight);
+  path.closed = true;
 }
 
 function onFrame(event) {
