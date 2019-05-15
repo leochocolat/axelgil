@@ -53,6 +53,7 @@ function createPath(strength) {
 			springs.push(spring);
 		}
 	}
+	path.closed = true;
 	path.position.x -= size.width / 4;
 	path1 = path.clone();
 	path1.style.fillColor = "#4f6ab1"
