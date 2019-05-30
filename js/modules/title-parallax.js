@@ -1,15 +1,13 @@
-let controller = new ScrollMagic.Controller();
+var controller = new ScrollMagic.Controller();
 
 let parallax = new TimelineMax();
 
 parallax.add([
-
   TweenMax.to(".scrollmagic-parallax", 1, {y: 200})
-
 ]);
 
 
-let scene = new ScrollMagic.Scene({
+var scene = new ScrollMagic.Scene({
   triggerElement: '.scrollmagic-parallax-trigger',
   triggerHook: 0,
   duration: 1000,

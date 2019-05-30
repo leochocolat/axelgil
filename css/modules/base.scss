@@ -1,4 +1,5 @@
 body {
+  opacity: 0; //FOR ANIM ONLOAD.JS
   overflow-x: hidden;
   max-width: 100%;
   color: $mainColor;
@@ -247,6 +248,11 @@ a {
 video::-webkit-media-controls-panel {
    background-image: none !important;
    filter: brightness(0.4);
+}
+
+//INIT ANIMATIONS
+.stagger-appear, .appear, .appear-custom {
+  opacity: 0;
 }
 
 

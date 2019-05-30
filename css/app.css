@@ -32,6 +32,7 @@
   font-style: normal; }
 
 body {
+  opacity: 0;
   overflow-x: hidden;
   max-width: 100%;
   color: #081757;
@@ -275,6 +276,9 @@ video::-webkit-media-controls-panel {
   background-image: none !important;
   -webkit-filter: brightness(0.4);
           filter: brightness(0.4); }
+
+.stagger-appear, .appear, .appear-custom {
+  opacity: 0; }
 
 #theme {
   margin: 100px; }
