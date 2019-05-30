@@ -16,13 +16,14 @@ var controller = new ScrollMagic.Controller();
        tl.add([
          TweenMax.fromTo($(this).find('.appear'), 1, {autoAlpha: 0}, {autoAlpha: 1, ease: Power1.easeInOut}),
          TweenMax.staggerFromTo($(this).find('.stagger-appear'), 1, {autoAlpha: 0}, {autoAlpha: 1, ease: Power1.easeInOut}, 0.08),
-         TweenMax.from($(this).find('.move-up'), 1, {autoAlpha: 0, ease: Power1.easeInOut}),
+         TweenMax.from($(this).find('.move'), 1, {autoAlpha: 0, x: 20, ease: Power1.easeInOut}),
        ]);
 
        var scene = new ScrollMagic.Scene({
          triggerElement: this,
          triggerHook: .5
        })
+       .addIndicators()
        .setTween(tl)
        .addTo(controller);
 
