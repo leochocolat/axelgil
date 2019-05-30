@@ -5,9 +5,7 @@ var controller = new ScrollMagic.Controller();
 
    TweenMax.fromTo('body', .5, {autoAlpha: 0}, {autoAlpha: 1, ease: Power1.easeInOut})
 
-   if ($('body').height() > window.innerHeight) {
-
-     console.log("Hello Scroll");
+   if ($('body').height() > window.innerHeight && $(".scroll-anim-trigger")[0] != undefined) {
 
      $(".scroll-anim-trigger").each(function() {
 
@@ -23,7 +21,6 @@ var controller = new ScrollMagic.Controller();
          triggerElement: this,
          triggerHook: .5
        })
-       .addIndicators()
        .setTween(tl)
        .addTo(controller);
 
