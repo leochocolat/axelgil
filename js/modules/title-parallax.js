@@ -13,8 +13,7 @@ let scene = new ScrollMagic.Scene({
   triggerElement: '.scrollmagic-parallax-trigger',
   triggerHook: 0,
   duration: 1000,
+  offset: 5,
 })
-.addIndicators()
-// .setPin(".scrollmagic-parallax")
 .setTween(parallax)
 .addTo(controller);
