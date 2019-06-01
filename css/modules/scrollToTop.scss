@@ -1,0 +1,47 @@
+.scrollToTop-button {
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $Blue1;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .arrow {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    &:before {
+      transform: rotate(-45deg);
+      content: '';
+      position: absolute;
+      top: -5px;
+      right: -6px;
+      border-radius: 5px;
+      width: 25px;
+      height: 7px;
+      background-color: white;
+    }
+
+    &:after {
+      transform: rotate(45deg);
+      content: '';
+      position: absolute;
+      top: -5px;
+      left: -6px;
+      border-radius: 5px;
+      width: 25px;
+      height: 7px;
+      background-color: white;
+    }
+  }
+
+}
