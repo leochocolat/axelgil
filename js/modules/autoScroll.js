@@ -11,9 +11,7 @@ window.addEventListener('scroll', function(e) {
   scrollLevel = window.scrollY;
 
   currentTarget = targets[targetIndex];
-  console.log(currentTarget.clientHeight)
   targetPosition = currentTarget.offsetTop - window.innerHeight/2 + currentTarget.clientHeight/2;
-  console.log(targetPosition)
 
   if(scrollLevel > previousScrollLevel + 5 && allowAutoScroll) {
 

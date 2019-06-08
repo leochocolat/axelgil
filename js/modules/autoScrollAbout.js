@@ -14,8 +14,6 @@ window.addEventListener('scroll', function(e) {
 
   if(scrollLevel > previousScrollLevel + 5 && allowAutoScroll) {
     TweenMax.to(window, 1, {scrollTo: targets[targetIndex], onComplete: Done});
-  } else if(scrollLevel + 10 < previousScrollLevel) {
-    allowAutoScroll = false;
   }
 
   previousScrollLevel = scrollLevel;
@@ -29,6 +27,5 @@ function Done() {
   if(targets.length > targetIndex + 1) {
     targetIndex++;
   }
-
 
 }
