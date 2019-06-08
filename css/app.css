@@ -181,6 +181,18 @@ a {
     width: 100%;
     height: auto; }
 
+.container-morph-img {
+  position: relative; }
+  .container-morph-img img, .container-morph-img svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto; }
+
 .resize-90 {
   width: 90%;
   margin-left: auto;
@@ -494,19 +506,22 @@ video::-webkit-media-controls-panel {
               transform: rotate(180deg); }
 
 .scrollToTop-button {
-  z-index: 100;
+  z-index: 10;
   opacity: 0;
   visibility: hidden;
   position: fixed;
   bottom: 100px;
   right: 50px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: #4f6ab1; }
   .scrollToTop-button:hover {
     cursor: pointer; }
   .scrollToTop-button .arrow {
+    -webkit-transform: scale(0.75);
+        -ms-transform: scale(0.75);
+            transform: scale(0.75);
     position: absolute;
     left: 50%;
     top: 50%; }

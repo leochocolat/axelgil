@@ -149,6 +149,18 @@ a {
     height: auto;
   }
 }
+
+.container-morph-img {
+  position: relative;
+  img, svg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+  }
+}
 .resize-90 {
   width: 90%;
   margin-left: auto;
@@ -248,6 +260,11 @@ a {
 video::-webkit-media-controls-panel {
    background-image: none !important;
    filter: brightness(0.4);
+}
+
+//SCROLL BEHAVIOR
+.snap-scroll-container {
+    
 }
 
 //INIT ANIMATIONS

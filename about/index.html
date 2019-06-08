@@ -24,7 +24,7 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.11.5/paper-full.js"></script>
   <link rel="stylesheet" href="../css/app.css">
 </head>
-<body id="about">
+<body id="about" class="autoScroll-trigger">
 
   <div class="menu-off" id="menu">
     <canvas id="morph-circle"></canvas>
@@ -78,7 +78,7 @@
           <div class="row row-custom">
             <div class="col-12 col-md-4 col-lg-5">
               <div class="container-img appear">
-                <img src="../images/img-about.png" alt="">
+                <img id="target-img" src="../images/img-about.png" alt="">
               </div>
             </div>
             <div class="col-12 col-md-8 col-lg-6">
@@ -118,7 +118,7 @@
     </div>
   </div>
 
-  <div class="super-container bg-blue1 scroll-anim-trigger">
+  <div class="super-container bg-blue1 scroll-anim-trigger autoScroll-target">
     <div class="container">
       <div class="page-body">
         <div class="container-content">
@@ -183,10 +183,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
   <script src="../js/modules/onload.js"></script>
+  <script src="../js/modules/autoScrollAbout.js"></script>
   <script type="text/paperscript" src="../js/paper-custom.js" canvas="myCanvas"></script>
   <script src="../js/modules/menu.js"></script>
   <script src="../js/modules/title-parallax.js"></script>
+  <script src="../js/modules/morph.js"></script>
   <script type="text/paperscript" src="../js/paper-menu.js" canvas="morph-circle"></script>
 
 </body>
