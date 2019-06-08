@@ -292,7 +292,7 @@ video::-webkit-media-controls-panel {
   -webkit-filter: brightness(0.4);
           filter: brightness(0.4); }
 
-.stagger-appear, .appear, .appear-custom {
+.stagger-appear, .appear, .appear-custom, .move {
   opacity: 0; }
 
 #theme {
@@ -553,6 +553,41 @@ video::-webkit-media-controls-panel {
       height: 7px;
       background-color: white; }
 
+.loading-page {
+  z-index: 10000;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white; }
+  .loading-page .name-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 35px;
+    text-transform: uppercase; }
+    .loading-page .name-container span {
+      opacity: 1;
+      position: absolute;
+      top: 0; }
+      .loading-page .name-container span.name-left {
+        right: 120px; }
+      .loading-page .name-container span.name-right {
+        left: 120px; }
+  .loading-page .logo-loading-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+
 #home {
   overflow: hidden; }
   #home .video-container {
@@ -667,9 +702,9 @@ video::-webkit-media-controls-panel {
   margin: 0 50px; }
 
 #work svg {
-  -webkit-transform: scale(1.2) translateY(-30px);
-      -ms-transform: scale(1.2) translateY(-30px);
-          transform: scale(1.2) translateY(-30px); }
+  -webkit-transform: scale(1.1) translateY(-30px);
+      -ms-transform: scale(1.1) translateY(-30px);
+          transform: scale(1.1) translateY(-30px); }
 
 #work .calque {
   -webkit-transform-origin: 50% 50%;
