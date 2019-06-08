@@ -43,7 +43,9 @@ function animateIn() {
 
   TweenMax.fromTo('.loading-page', .4, {autoAlpha: 1}, {autoAlpha: 0, ease: Power1.easeInOut})
   document.body.style.overflowY = "visible";
-  document.getElementById("home").style.overflowY = "hidden";
+  if(document.getElementById("home")) {
+    document.getElementById("home").style.overflowY = "hidden";
+  }
 
   setTimeout(function(){
 
