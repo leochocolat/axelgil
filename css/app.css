@@ -666,6 +666,16 @@ video::-webkit-media-controls-panel {
 #work .container-project {
   margin: 0 50px; }
 
+#work svg {
+  -webkit-transform: scale(1.2) translateY(-30px);
+      -ms-transform: scale(1.2) translateY(-30px);
+          transform: scale(1.2) translateY(-30px); }
+
+#work .calque {
+  -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%; }
+
 @media screen and (max-width: 768px) {
   #contact .page-body h1 {
     font-size: 100px; } }

@@ -10,4 +10,12 @@
   .container-project {
     margin: 0 50px;
   }
+
+  svg {
+    transform: scale(1.2) translateY(-30px);
+  }
+
+  .calque {
+    transform-origin: 50% 50%;
+  }
 }

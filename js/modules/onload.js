@@ -15,6 +15,7 @@ var controller = new ScrollMagic.Controller();
          TweenMax.fromTo($(this).find('.appear'), 1, {autoAlpha: 0}, {autoAlpha: 1, ease: Power1.easeInOut}),
          TweenMax.staggerFromTo($(this).find('.stagger-appear'), 1, {autoAlpha: 0}, {autoAlpha: 1, ease: Power1.easeInOut}, 0.08),
          TweenMax.from($(this).find('.move'), 1, {autoAlpha: 0, x: 20, ease: Power1.easeInOut}),
+         TweenMax.staggerFrom($(this).find('.calque'), 1, {autoAlpha: 0, transformOrigin: "center", rotation: 90}, -.1)
        ]);
 
        var scene = new ScrollMagic.Scene({
