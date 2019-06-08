@@ -43,6 +43,7 @@ function animateIn() {
 
   TweenMax.fromTo('.loading-page', .4, {autoAlpha: 1}, {autoAlpha: 0, ease: Power1.easeInOut})
   document.body.style.overflowY = "visible";
+  document.getElementById("home").style.overflowY = "hidden";
 
   setTimeout(function(){
 
@@ -55,7 +56,7 @@ function animateIn() {
           TweenMax.fromTo($(this).find('.appear'), 1, {autoAlpha: 0}, {autoAlpha: 1, ease: Power1.easeInOut}),
           TweenMax.staggerFromTo($(this).find('.stagger-appear'), 1, {autoAlpha: 0}, {autoAlpha: 1, ease: Power1.easeInOut}, 0.08),
           TweenMax.fromTo($(this).find('.move'), 1, {autoAlpha: 0, x: 20}, {autoAlpha: 1, x: 0, ease: Power1.easeInOut}),
-          TweenMax.staggerFrom($(this).find('.calque'), 1, {autoAlpha: 0, transformOrigin: "center", rotation: 90}, -.1)
+          TweenMax.staggerFromTo($(this).find('.calque'), 1, {autoAlpha: 0, transformOrigin: "50% 50%", rotation: 90}, {autoAlpha: 1, transformOrigin: "50% 50%", rotation: 0}, -.1)
         ]);
 
         var scene = new ScrollMagic.Scene({
@@ -98,8 +99,20 @@ function animFinishedHandler() {
 
   if(animFinished === true) {
     animateIn();
+    videoManager();
   } else {
     requestAnimationFrame(animFinishedHandler);
+  }
+
+}
+
+function videoManager() {
+
+  if(document.getElementById("video")) {
+    // console.log(document.querySelector("video"))
+    $("#video").ready(function() {
+      document.getElementById("video").play();
+    });
   }
 
 }
