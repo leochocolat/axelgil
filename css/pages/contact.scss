@@ -42,10 +42,20 @@
           justify-content: flex-start;
           align-items: center;
         }
+        .email a {
+          transition: .2s ease-in-out all;
+          &:hover {
+            color: $Grey1;
+          }
+        }
         .container-icons {
           .icons {
             img {
+              transition: .2s ease-in-out all;
               margin: 15px 3px;
+              &:hover {
+                transform: rotate(10deg) scale(1.05);
+              }
             }
           }
         }

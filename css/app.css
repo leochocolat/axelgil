@@ -752,8 +752,18 @@ video::-webkit-media-controls-panel {
       -ms-flex-align: center;
           align-items: center; }
 
+#contact .page-body .container-content .content .email a {
+  transition: .2s ease-in-out all; }
+  #contact .page-body .container-content .content .email a:hover {
+    color: #B7B6B6; }
+
 #contact .page-body .container-content .content .container-icons .icons img {
+  transition: .2s ease-in-out all;
   margin: 15px 3px; }
+  #contact .page-body .container-content .content .container-icons .icons img:hover {
+    -webkit-transform: rotate(10deg) scale(1.05);
+        -ms-transform: rotate(10deg) scale(1.05);
+            transform: rotate(10deg) scale(1.05); }
 
 #project h4 {
   font-family: "GothamProMedium", "Gotham", Arial, sans-serif !important; }
