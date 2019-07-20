@@ -588,6 +588,10 @@ video::-webkit-media-controls-panel {
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
 
+.shape-wwf-2 pattern {
+  width: 100%;
+  height: 100%; }
+
 #home {
   overflow: hidden; }
   #home .video-container {
