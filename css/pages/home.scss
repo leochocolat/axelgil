@@ -1,6 +1,6 @@
 #home {
 
-  // overflow: hidden;
+  overflow: hidden;
 
   .video-container {
     background-color: white;
@@ -41,6 +41,12 @@
       display: none;
     }
 
+    @media screen and (max-width: 576px) {
+      .sound-icon, .sound-icon-off {
+        width: 0;
+        height: 0;
+      }
+    }
 
   }
 

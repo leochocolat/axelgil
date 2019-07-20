@@ -588,44 +588,50 @@ video::-webkit-media-controls-panel {
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
 
-#home .video-container {
-  background-color: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
-  #home .video-container video, #home .video-container .video-load-image {
+#home {
+  overflow: hidden; }
+  #home .video-container {
+    background-color: white;
     position: absolute;
+    top: 0;
     left: 0;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
     width: 100%;
-    height: auto;
-    background-color: white; }
-  #home .video-container .sound-icon {
-    pointer-events: none;
-    width: 100px;
-    height: auto;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
-  #home .video-container .sound-icon-off {
-    pointer-events: none;
-    width: 100px;
-    height: auto;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    display: none; }
+    height: 100%; }
+    #home .video-container video, #home .video-container .video-load-image {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      width: 100%;
+      height: auto;
+      background-color: white; }
+    #home .video-container .sound-icon {
+      pointer-events: none;
+      width: 100px;
+      height: auto;
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+    #home .video-container .sound-icon-off {
+      pointer-events: none;
+      width: 100px;
+      height: auto;
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      display: none; }
+    @media screen and (max-width: 576px) {
+      #home .video-container .sound-icon, #home .video-container .sound-icon-off {
+        width: 0;
+        height: 0; } }
 
 #about .container {
   padding-bottom: 0; }
@@ -926,6 +932,7 @@ video::-webkit-media-controls-panel {
   bottom: 0; }
 
 .project-template-3 .blue-section {
+  padding: 50px 0;
   position: relative;
   color: white;
   background-color: #4f6ab1; }

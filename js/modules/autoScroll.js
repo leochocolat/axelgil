@@ -24,8 +24,6 @@ window.addEventListener('scroll', function(e) {
 
   previousScrollLevel = scrollLevel;
 
-  // console.log('allowAutoScroll', allowAutoScroll);
-
 });
 
 function Done() {

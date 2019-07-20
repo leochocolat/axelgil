@@ -7,9 +7,6 @@ var targetIndex = 0;
 var targets = document.querySelectorAll(".autoScroll-target");
 
 window.addEventListener('scroll', function(e) {
-
-  console.log(e);
-
   scrollLevel = window.scrollY;
 
   if(scrollLevel > previousScrollLevel + 5 && allowAutoScroll) {
@@ -17,15 +14,10 @@ window.addEventListener('scroll', function(e) {
   }
 
   previousScrollLevel = scrollLevel;
-
-  console.log('allowAutoScroll', allowAutoScroll);
-
 });
 
 function Done() {
-
   if(targets.length > targetIndex + 1) {
     targetIndex++;
   }
-
 }
