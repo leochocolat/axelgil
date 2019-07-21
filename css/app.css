@@ -729,6 +729,9 @@ video::-webkit-media-controls-panel {
 
 #work .container-project {
   margin: 0 50px; }
+  @media screen and (max-width: 500px) {
+    #work .container-project {
+      margin: 10px 0; } }
 
 #work svg {
   -webkit-transform: scale(1.1) translateY(-30px);

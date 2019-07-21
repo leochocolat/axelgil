@@ -58,7 +58,7 @@ function animateIn() {
           TweenMax.fromTo($(this).find('.appear'), 1, {autoAlpha: 0}, {autoAlpha: 1, ease: Power1.easeInOut}),
           TweenMax.staggerFromTo($(this).find('.stagger-appear'), 1, {autoAlpha: 0}, {autoAlpha: 1, ease: Power1.easeInOut}, 0.08),
           TweenMax.fromTo($(this).find('.move'), 1, {autoAlpha: 0, x: 20}, {autoAlpha: 1, x: 0, ease: Power1.easeInOut}),
-          TweenMax.staggerFromTo($(this).find('.calque'), 1, {autoAlpha: 0, transformOrigin: "50% 50%", rotation: 90}, {autoAlpha: 1, transformOrigin: "50% 50%", rotation: 0}, -.1)
+          TweenMax.staggerFrom($(this).find('.calque'), 1, {autoAlpha: 0, transformOrigin: "50% 50%", rotation: 90}, -.1)
         ]);
 
         var scene = new ScrollMagic.Scene({
